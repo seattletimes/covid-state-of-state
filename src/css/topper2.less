@@ -1,0 +1,125 @@
+.slide {
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+
+  video {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+.inner1 {
+  position: absolute;
+  top: 15%;
+  left: 5%;
+  font-family: 'Cinzel', serif;
+  color: white;
+  font-size: 3em;
+  width: 100%;
+  z-index: 5;
+  opacity: 0;
+}
+
+.inner2 {
+  position: absolute;
+  top: 25%;
+  left: 5%;
+  font-family: 'Cinzel', serif;
+  font-size: 3em;
+  color: white;
+
+  width: 100%;
+  z-index: 5;
+  opacity: 0;
+}
+
+.inner3 {
+  position: absolute;
+  top: 15%;
+  right: 5%;
+  font-family: 'Cinzel', serif;
+  text-align: right;
+  font-size: 3em;
+  color: white;
+
+  width: 100%;
+  z-index: 5;
+  opacity: 0;
+
+}
+
+.inner4 {
+  position: absolute;
+  text-align: right;
+  top: 25%;
+  right: 5%;
+  font-family: 'Cinzel', serif;
+  font-size: 3em;
+  color: white;
+
+  width: 100%;
+  z-index: 5;
+  opacity: 0;
+}
+
+.inner5 {
+  position: absolute;
+  text-align: right;
+  top: 35%;
+  right: 5%;
+  font-family: 'Cinzel', serif;
+  font-size: 1em;
+  color: #f5d5db;
+  font-weight: 900;
+
+  width: 100%;
+  z-index: 5;
+  opacity: 0;
+}
+}
+
+.fademe {
+  animation: fadein 2s forwards;
+}
+
+
+#second, #fourth {
+  animation-delay: 1s;
+
+}
+
+#third, #fifth {
+  animation-delay: 3s;
+}
+#sixth {
+  animation-delay: 5s;
+}
+
+h1 {
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translate(-50%, 0);
+  font-size: 5em;
+  text-transform: uppercase;
+  text-align: center;
+  width: 100%;
+  font-weight: normal;
+  font-family: 'Cinzel', serif;
+  letter-spacing: 2px;
+  // font-family: 'Averia Serif Libre', cursive;
+  background: -webkit-linear-gradient(rgba(0,0,0,0.9), rgba(0,0,0,0));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+}
+
+.centerme {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  text-align: center;
+  transform: translate(-50%, -50%);
+}

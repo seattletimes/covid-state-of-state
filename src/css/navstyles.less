@@ -1,0 +1,81 @@
+@import "values";
+
+// .vert {
+//  width: 1px;
+//  height: 30px;
+//  position: relative;
+//  display: inline-block;
+// }
+
+.nav-container {
+  display: inline-block;
+  position: absolute;
+  font-family: @df-sans;
+  font-weight: 200;
+  padding-top: 5px;
+  top: 0px;
+  // border-right: 1px solid #ddd;
+  float: right;
+  margin-right: 6px;
+  height: 48px;
+  right: 125px;
+
+  a { color: black; }
+
+  @media @mobile {
+    height: 33px;
+    padding-top: 0px;
+    right: 100px;
+  }
+
+
+
+  .nav-label, .nav-label-mobile {
+    display: inline-block;
+    vertical-align: sub;
+    margin-right: 10px;
+    .menuName { display: inline-block; vertical-align: sub; }
+
+    @media @mobile {
+      vertical-align: text-top;
+      padding-top: 3px;
+    }
+  }
+
+  .nav-label {
+    i { vertical-align: sub; margin-left: 7px; }
+  }
+
+  .nav-list {
+    background-color: white;
+    list-style: none;
+    position: absolute;
+    top: 47px;
+    padding: 0;
+    margin: 0;
+    width: 210px;
+    display: none;
+
+    @media @mobile {
+      top: 33px;
+    }
+
+
+    li {
+      padding: 5px 5px;
+      border-top: 1px solid #ddd;
+      font-family: @df-sans;
+      font-weight: 200;
+      font-size: 16px;
+      display: block;
+    }
+
+    li:hover {
+      background-color: #e0e0e0;
+    }
+  }
+
+  &.showMenu { display: block; }
+}
+
+.nav-container:hover .nav-list { display: block; }

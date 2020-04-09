@@ -1,0 +1,22 @@
+{
+  "s3": {
+    "stage": {
+      "bucket": "projects-staging.seattletimes.com",
+      "path": "productive-crenel"
+    },
+    "live": {
+      "bucket": "projects.seattletimes.com",
+      "path": "2020/femicide-juarez-mexico-border/"
+    }
+  },
+  "title": "Disappearing Daughters | Mothers search for justice and embrace fragile memories",
+  "description": "Through reporting, photography, film and poetry, immerse yourself in the stories of the resilient women of Ciudad Juárez, Mexico, as they search for justice after losing their beloved daughters.",
+  "author": "Corinne Chin and Erika Schultz",
+  "url": "https://projects.seattletimes.com/2020/femicide-juarez-mexico-border/",
+  "post_id": 12371667,
+  "image": "assets/social.jpg",
+  "sheets": [],
+  "docs": ["1ebDRwhhi-f8-oWE-_doxsNQPZdV5I5XVbzbvkaLtO4Q"],
+  "embedded": false,
+  "production": true
+}

@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en-US">
+  <head>
+    <%= t.include("partials/_head.html", grunt.data.json) %>
+    <% if (json.project.production && !json.project.embedded) { %>
+      <%= t.include("partials/_dataLayer.html") %>
+      <%= t.include("partials/_gtm.html") %>
+    <% } %>
+    <script src="https://use.fontawesome.com/6d8c4b1e6f.js"></script>
+
+
+    <link href="https://fonts.googleapis.com/css?family=PT+Serif:400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.typekit.net/dit3gta.css">
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body>
+    <% if (json.project.production && !json.project.embedded) { %>
+      <%= t.include("partials/_gtmNoScript.html") %>
+    <% } %>
+    <responsive-child>
+      <!-- content goes here -->
+
+      <%= t.include("partials/_nav.html") %>
+      <%= t.include("partials/_topper3.html") %>
+      <%= t.include("partials/_guts.html") %>
+      <%= t.include("partials/_test.html") %>
+      <%= t.include("partials/_experts.html") %>
+      <%= t.include("partials/_guts2.html") %>
+      <%= t.include("partials/_activist.html") %>
+      <%= t.include("partials/_guts3.html") %>
+      <%= t.include("partials/_empowerment.html") %>
+      <%= t.include("partials/_last.html") %>
+
+      <%= t.include("partials/_marketing.html", {type: "subscribe", placement: "footer"}) %>
+
+      <%= t.include("partials/_dontMiss.html") %>
+
+
+      <%= t.include("partials/_navBottom.html") %>
+
+    </responsive-child>
+
+    <script src="app.js" async></script>
+    <% if (json.project.production) { %>
+    <%= !json.project.embedded ? t.include("partials/_analytics.html") : "" %>
+    <%= t.include("partials/_workHere.html") %>
+    <% } %>
+  </body>
+</html>
