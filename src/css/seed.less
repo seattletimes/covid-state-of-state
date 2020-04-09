@@ -22,22 +22,12 @@
   background-color: #fff7f9;
   color: black !important;
   font-weight: normal;
-
-
 }
-
-// .marketing__button:visited {
-//   color: black;
-// }
 
 .marketing__button:hover {
   cursor: pointer;
   background-color: #e06e82;
-
-
 }
-
-
 
 .funding {
     width: 100%;
@@ -51,40 +41,6 @@
     // padding-left: 16px;
     border-top: 1px solid black;
     border-bottom: 1px solid black;
-
-    .logos {
-      // max-width: 200px;
-      text-align: center;
-      margin: auto;
-
-      .logo:nth-child(2) {
-        display: inline-block;
-        vertical-align: top;
-        max-width: 130px;
-        padding: 0 3px;
-      }
-      .logo:nth-child(1) {
-        display: inline-block;
-        vertical-align: top;
-        padding: 5px 3px 0 3px;
-        max-width: 110px;
-      }
-    }
-
-}
-
-.dropcap {
-  font-size: 5em;
-  float: left;
-  line-height: 0.85em;
-  margin-right: 4px;
-  font-family: @accent-font;
-  font-weight: 200;
-
-  &.slant {
-    margin-right: 0px;
-    font-style: normal;
-  }
 }
 
 .claudiaSlide {
@@ -111,7 +67,6 @@
     display: block;
     margin: auto;
   }
-
 }
 
 .claudiaText {
@@ -137,14 +92,10 @@
     height: 10px;
     background-color: pink;
   }
-
-
-
 }
 
 
 .byline { line-height: 1.5em; margin-top: 0; }
-
 .caption {
   // font-size: 17px;
   @media @mobile {
@@ -159,7 +110,6 @@
   }
 }
 
-
 .slideMe { display: none; }
 
 .credits {
@@ -173,8 +123,6 @@
   @media @mobile {
     padding: 25px 10px;
   }
-
-
 }
 
 .hr {
@@ -195,73 +143,30 @@
   color: #e06e82;
 }
 
-
-@keyframes fadein {
-    from { opacity: 0; }
-    to   { opacity: 1; }
-}
-
-/* Firefox < 16 */
-@-moz-keyframes fadein {
-    from { opacity: 0; }
-    to   { opacity: 1; }
-}
-
-/* Safari, Chrome and Opera > 12.1 */
-@-webkit-keyframes fadein {
-    from { opacity: 0; }
-    to   { opacity: 1; }
-}
-
-/* Internet Explorer */
-@-ms-keyframes fadein {
-    from { opacity: 0; }
-    to   { opacity: 1; }
-}
-
-/* Opera < 12.1 */
-@-o-keyframes fadein {
-    from { opacity: 0; }
-    to   { opacity: 1; }
-}
-
-
 .bigSlide { position: relative; }
 
 .slide, .slideVid {
   width: 100%;
 }
 
-
 .stickMe {
-
     height: 100vh;
-    position: fixed;
+    position: sticky;
     top: 0;
 
-
-
     .half {
-      position: fixed;
+      position: sticky;
       top: 50%;
       left: 6%;
       transform: translate(0%, -50%);
 
       &.right { right: 0; left: auto; }
-
-
     }
-
-
 }
 
 .fixedContainer.stickMe {
-  z-index: -5;
-  -webkit-transition: background 1s linear;
-  -moz-transition: background 1s linear;
-  -ms-transition: background 1s linear;
-  -o-transition: background 1s linear;
-  transition: background 1s linear;
+  padding-left: 5vh;
+  padding-top: 5vh;
 
   &.specialBackground {
     background-color: #fbf7f5;
@@ -273,26 +178,16 @@
   width: 100%;
   background-color: black;
   opacity: 0;
-
-
-  // .bc-player-BJvNJNM1g_default {
-  //   width: 100%;
-  //   height: ~"calc(100% - 200px)";
-  // }
 }
 
 #test {
-
 }
-
 
 .guts {
   height: 100vh;
 }
 
 .fixedTotal {
-  // padding: 25vh 0 50vh 0;
-
   &.padMe {
     margin-top: 20vh;
   }
@@ -310,7 +205,7 @@
   // margin: 25vh auto;
   position: relative;
   z-index: 4;
-  margin-bottom: 25vh;
+  // margin-bottom: 25vh;
 
   .text:nth-child(1) {
     padding-top: 15vh;
@@ -320,8 +215,6 @@
       padding-top: 50vh;
     }
   }
-
-
 }
 
 .breakMe {
@@ -351,33 +244,12 @@
   }
 }
 
-// .memorial::after {
-//   content: "";
-//   background-image: url("./assets/grids/Juarez_Layout11_05.JPG");
-//   background-repeat: no-repeat;
-//   background-size: cover;
-//   background-position: center;
-//   opacity: 0.8;
-//   top: 0;
-//   left: 0;
-//   bottom: 0;
-//   right: 0;
-//   position: absolute;
-//   z-index: -1;
-// }
-
 .text, .text-back {
   padding: 15px 0px;
   margin: 50vh 0;
   font-size: 16px;
   font-family: @df-sans;
   vertical-align: top;
-  // border: black solid 5px;
-
-  // @media @mobile {
-  //   padding: 15px;
-  //   background: rgba(255,255,255,0.5);
-  // }
 
   .text-wrapper {
     padding: 0;
@@ -386,7 +258,6 @@
     div {
       margin-bottom: 1em;
     }
-
 
     @media @mobile {
       padding: 15px;
@@ -404,11 +275,6 @@
     }
   }
 
-
-
-
-
-
   &.white {
     color: white;
     font-weight: bold;
@@ -417,7 +283,6 @@
       font-weight: normal;
     }
   }
-
 
   &.wide {
     max-width: 960px;
@@ -434,7 +299,6 @@
     &.activist-background {
       background-color: rgba(243,219,201,0.7);
     }
-
   }
 
   &.name {
@@ -449,15 +313,9 @@
     }
   }
 
-
-
-
-
   &.left {
     width: 50%;
     display: inline-block;
-
-
   }
 
   &.right {
@@ -471,10 +329,7 @@
       margin: 80vh auto;
       display: block;
     }
-
   }
-
-
 
   &.center {
     top: 50%;
@@ -520,10 +375,10 @@
 }
 
 .pics {
-  margin:auto;
-  vertical-align: top;
-  // display: none;
-  opacity: 0;
+  // margin:auto;
+  // vertical-align: top;
+  // // display: none;
+  // opacity: 0;
 
   .desktop {
     display: block;
@@ -543,7 +398,6 @@
     top: 0;
     width: 100%;
   }
-
 
   img {
     vertical-align: top;
@@ -575,7 +429,6 @@
         position: absolute;
         right: 0;
       }
-
     }
 
     &.vert {
@@ -612,8 +465,6 @@
     }
   }
 
-
-
   &.right { text-align: right; }
 
   &.quarter {
@@ -621,24 +472,17 @@
   }
 
   &.half {
-    width: 60%;
+    width: 50%;
 
     @media @mobile {
       width: 100%;
       top: 25%;
       left: 0%;
     }
-
-
     &.right {  }
   }
-  //
-  // &.bottomleft, &.bottomright {
-  //   margin-top: 51vh;
-  // }
-
-
 }
+
 .photoWrap {
   max-width: 960px;
   margin: auto;
@@ -654,12 +498,6 @@
       padding: 2px 2px 4px 2px;
     }
   }
-  // .half-stat-one {
-  //   width: 50%;
-  //   display: block;
-  //   margin: auto;
-  //   vertical-align: top;
-  // }
 
   .single {
     padding: 3px;
@@ -692,10 +530,9 @@
      padding: 0;
    }
  }
-
-
 }
- img {
+
+img {
    width: 100%;
  }
 
@@ -722,8 +559,6 @@
     color: #e06e82;
     font-size: 1.3em;
   }
-
-
 }
 
 .subhed {
@@ -748,15 +583,14 @@
   }
 }
 
+.reg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
 
-  .reg {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-  }
-
-  .overlay {
+.overlay {
   position: absolute; /* Sit on top of the page content */
   // display: none; /* Hidden by default */
   width: 100%; /* Full width (cover the whole page) */
@@ -774,3 +608,4 @@
 .margin {
   margin-bottom: 25vh;
 }
+
