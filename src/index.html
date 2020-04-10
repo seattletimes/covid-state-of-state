@@ -8,7 +8,10 @@
     <% } %>
     <link rel="stylesheet" type="text/css" href="style.css">
   </head>
+
   <body>
+
+
     <% if (json.project.production && !json.project.embedded) { %>
       <%= t.include("partials/_gtmNoScript.html") %>
     <% } %>
@@ -16,9 +19,16 @@
       <!-- content goes here -->
 
       <%= t.include("partials/_nav.html") %>
+
+      <header class="splash">
+        <h1>HEADLINE FOR ALL</h1>
+        <!-- <video src="./assets/videos/0_Landing.mp4" autoplay playsinline loop muted></video>
+        <div class="captionLeft">(Ramon Dompor / The Seattle Times)</div> -->
+      </header>
       <%= t.include("partials/_guts.html") %>
 
-      <%= t.include("partials/_guts2.html") %>
+      <%= t.include("partials/_modeling.html") %>
+      <%= t.include("partials/_testing.html") %>
 
       <%= t.include("partials/_last.html") %>
 
