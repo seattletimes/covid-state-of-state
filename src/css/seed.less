@@ -247,17 +247,17 @@
 .text, .text-back {
   padding: 15px 0px;
   margin: 50vh 0;
-  font-size: 16px;
-  font-family: @df-sans;
+  // font-size: 16px;
+  // font-family: @df-sans;
   vertical-align: top;
 
   .text-wrapper {
     padding: 0;
     background: transparent;
 
-    div {
-      margin-bottom: 1em;
-    }
+    // div {
+    //   margin-bottom: 1em;
+    // }
 
     @media @mobile {
       padding: 15px;
@@ -289,18 +289,6 @@
     margin: auto;
   }
 
-  .background {
-    background-color: rgba(255,255,255,0.8);
-    padding: 15px;
-
-    &.expert-background {
-      background-color: rgba(239,239,241,0.7);
-    }
-    &.activist-background {
-      background-color: rgba(243,219,201,0.7);
-    }
-  }
-
   &.name {
     color: white;
     top: 80%;
@@ -320,8 +308,8 @@
 
   &.right {
     // width: 35%;
-    margin-left:  ~"calc(66% + 50px)";
-    width:  ~"calc(100% - (72% + 50px))";
+    margin-left:  ~"calc(52% + 50px)";
+    width:  ~"calc(100% - (60% + 50px))";
     display: inline-block;
 
     @media @mobile {
@@ -472,7 +460,7 @@
   }
 
   &.half {
-    width: 50%;
+    width: 52%;
 
     @media @mobile {
       width: 100%;
@@ -481,6 +469,10 @@
     }
     &.right {  }
   }
+}
+.video {
+max-width: 680px;
+margin: auto;
 }
 
 .photoWrap {
@@ -513,7 +505,7 @@
  }
 
 .maxWrap {
-  max-width: 710px;
+  max-width: 680px;
   margin: auto;
   padding: 10px;
 
