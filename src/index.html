@@ -21,7 +21,7 @@
       <%= t.include("partials/_nav.html") %>
 
       <header class="splash">
-        <h1>HEADLINE FOR ALL</h1>
+        <h1>The state of our state's coronavirus fight</h1>
         <!-- <video src="./assets/videos/0_Landing.mp4" autoplay playsinline loop muted></video>
         <div class="captionLeft">(Ramon Dompor / The Seattle Times)</div> -->
       </header>
@@ -29,12 +29,17 @@
 
       <%= t.include("partials/_modeling.html") %>
       <%= t.include("partials/_testing.html") %>
+      <%= t.include("partials/_ppe.html") %>
+      <%= t.include("partials/_hospitals.html") %>
+      <%= t.include("partials/_transportation.html") %>
+      <%= t.include("partials/_deaths.html") %>
+      <%= t.include("partials/_biz.html") %>
 
       <%= t.include("partials/_last.html") %>
 
       <%= t.include("partials/_marketing.html", {type: "subscribe", placement: "footer"}) %>
-
-      <%= t.include("partials/_dontMiss.html") %>
+<!-- 
+      <%= t.include("partials/_dontMiss.html") %> -->
 
       <%= t.include("partials/_navBottom.html") %>
 

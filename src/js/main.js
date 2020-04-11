@@ -1,5 +1,3 @@
-// var paywall = require("./lib/paywall");
-// setTimeout(() => paywall(12371667), 5000);
 // require('waypoints/lib/noframework.waypoints.min');
 const $ = require('jquery');
 const async = require("async");
