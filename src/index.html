@@ -1,6 +1,7 @@
 <!doctype html>
 <html lang="en-US">
   <head>
+    <meta property="og:image" content="https://projects.seattletimes.com/2020/charting-coronavirus-outbreak-washington-state/assets/social.jpg" />
     <%= t.include("partials/_head.html", grunt.data.json) %>
     <% if (json.project.production && !json.project.embedded) { %>
     <%= t.include("partials/_dataLayer.html") %>
