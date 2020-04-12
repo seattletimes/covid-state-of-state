@@ -6,13 +6,13 @@
     },
     "live": {
       "bucket": "projects.seattletimes.com",
-      "path": ""
+      "path": "2020/charting-coronavirus-outbreak-washington-state"
     }
   },
-  "title": "",
-  "description": "",
-  "url": "",
-  "post_id": "",
+  "title": "The state of our state's coronavirus fight | What's the true state of the coronavirus outbreak in Washington state? These charts explain.",
+  "description": "How many people will die? How many jobs will be lost? All around us, the coronavirus pandemic has caused an immense human tragedy in Washington. Here’s what we know and don’t know right now. How this all ends is still anyone’s guess.",
+  "url": "https://projects.seattletimes.com/2020/charting-coronavirus-outbreak-washington-state",
+  "post_id": "12661649",
   "image": "assets/social.jpg",
   "sheets": [],
   "docs": [],
