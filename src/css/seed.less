@@ -165,20 +165,20 @@
 }
 
 .stickMe {
-    height: 30vh;
+    height: 8vh;
     position: sticky;
     top: 0;
     padding-top: 10px;
 
-    @media only screen and (max-width: 1100px) {
-      height: 70vh;
+    @media only screen and (max-width: 1200px) {
+      height: 25vh;
       }
       @media only screen and (max-width: 1000px) {
-        height: 75vh;
+        height: 18vh;
         }
   
       @media @tablet {
-        height: 40vh;
+        height: 20vh;
       }
       
       @media @mobile {
@@ -230,6 +230,15 @@
 .fixedTotal {
   max-width: 1300px;
   margin: auto;
+  padding-bottom: 5px;
+
+  @media @tablet {
+    padding-bottom: 5px;
+  }
+
+  @media @mobile {
+    padding-bottom: 15px;
+  }
 
   &.padMe {
     margin-top: 20vh;
@@ -249,6 +258,16 @@
   position: relative;
   z-index: 4;
   margin-bottom: 80vh;
+
+  @media @tablet{
+    margin-bottom: 60vh;
+  }
+
+
+  @media @mobile {
+    background: white;
+  }
+
 }
 
 .breakMe {
@@ -294,8 +313,9 @@
     // }
 
     @media @mobile {
-      padding: 15px 15px 0 15px;
+      padding: 15px;
       background-color: white;
+
     }
   }
 
