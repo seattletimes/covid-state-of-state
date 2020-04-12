@@ -33,6 +33,12 @@
   text-align: center;
   font-family: @df-sans;  
   width: 550px;
+  
+  @media @mobile {
+    width: 300px;
+    font-size: 16px;
+  }
+  
 }
 
 .funding {
@@ -601,14 +607,12 @@ img {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
+  flex-direction: row;
+  
 }
 
 .button {
-  flex-grow: 1;
-  text-align: center;
-  max-width: 150px;
-  width: 90%;
-  margin: auto;
+  flex-grow: 1 1 auto;
   border: 1px solid #25aca9;
   padding: 6px 6px;
   border-radius: 5px;
@@ -616,7 +620,8 @@ img {
   font-size: 17px;
   background-color: #c7e6e3;
   color: black !important;
-  font-weight: normal;
+  display: inline-block;
+  margin-top: 5px;
 }
 
 .button:hover {

@@ -6,6 +6,7 @@ require("component-responsive-frame/child");
 const ready = require("./brightcove");
 
 
+
 // function updateScrollBar() {
 //   const docHeight = ($( document ).height()) - ($( window ).height());
 //   let position = $(window).scrollTop();
