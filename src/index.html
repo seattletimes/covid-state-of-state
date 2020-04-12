@@ -10,8 +10,6 @@
   </head>
 
   <body>
-
-
     <% if (json.project.production && !json.project.embedded) { %>
       <%= t.include("partials/_gtmNoScript.html") %>
     <% } %>
@@ -22,12 +20,12 @@
 
       <header class="splash">
         <h1>The state of our state's coronavirus fight</h1>
-        <!-- <video src="./assets/videos/0_Landing.mp4" autoplay playsinline loop muted></video>
-        <div class="captionLeft">(Ramon Dompor / The Seattle Times)</div> -->
+
       </header>
       <%= t.include("partials/_guts.html") %>
 
       <%= t.include("partials/_modeling.html") %>
+
       <%= t.include("partials/_testing.html") %>
       <%= t.include("partials/_ppe.html") %>
       <%= t.include("partials/_hospitals.html") %>
