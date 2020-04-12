@@ -165,22 +165,24 @@
 }
 
 .stickMe {
-    height: 90vh;
+    height: 30vh;
     position: sticky;
     top: 0;
+    padding-top: 10px;
 
     @media only screen and (max-width: 1100px) {
-    height: 80vh;
-    }
-    @media only screen and (max-width: 1000px) {
-      height: 75vh;
+      height: 70vh;
       }
-
-    @media @tablet {
-      height: 40vh;
-    }
-    @media @mobile {
-      height: 90vh;
+      @media only screen and (max-width: 1000px) {
+        height: 75vh;
+        }
+  
+      @media @tablet {
+        height: 40vh;
+      }
+      
+      @media @mobile {
+      height: 80vh;
     }
 
     .half {
@@ -197,8 +199,13 @@
   padding-left: 5vh;
   // padding-top: 5vh;
 
+  // @media @mobile {
+  //   padding-left: 0;
+  // }
+
   @media @mobile {
-    padding-left: 0;
+    background-color: white;
+    padding-bottom: 10px;
   }
 
   &.specialBackground {
@@ -241,22 +248,7 @@
   // margin: 25vh auto;
   position: relative;
   z-index: 4;
-
-  // margin-bottom: 25vh;
-  @media @mobile {
-    background-color: white;
-    padding-bottom: 10px;
-  }
-
-  .text:nth-child(1) {
-    padding-top: 15vh;
-    margin-top: 20vh;
-
-    @media @mobile {
-      padding-top: 0;
-      margin-top: 0;
-    }
-  }
+  margin-bottom: 80vh;
 }
 
 .breakMe {
@@ -303,7 +295,7 @@
 
     @media @mobile {
       padding: 15px 15px 0 15px;
-      background: white;
+      background-color: white;
     }
   }
 
@@ -471,9 +463,9 @@ max-width: 680px;
 margin: auto;
 padding: 0 10px;
 
-@media @mobile {
-  padding: 0;
-}
+  @media @mobile {
+    padding: 0;
+  }
 }
 
 .photoWrap {
@@ -510,6 +502,7 @@ padding: 0 10px;
   max-width: 680px;
   margin: auto;
   padding: 10px;
+  background-color: white;
 
  &.padMe {
    padding-top: 15vh;
@@ -609,8 +602,8 @@ img {
 .navButton {
   display: flex;
   flex-wrap: wrap;
-  flex-direction: row;
   justify-content: center;
+  flex-direction: row;
   
 }
 

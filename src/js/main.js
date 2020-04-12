@@ -9,12 +9,18 @@ function obvserverCallback(entries) {
     for (const entry of entries) {
         const target = entry.target;
 
-        const prev = $(target).prev(".stickMe");
-        const upperThreshold = 0.55;
+        console.log(target.dataset.src);
+        console.log(target.dataset.caption);
+        
+        const prev = $(target).prevAll(".stickMe");
+        const upperThreshold = 0.5;
         const val = Math.min(entry.intersectionRatio, upperThreshold);
         const opacity = (val / upperThreshold);
 
         prev.css("opacity", opacity);
+        prev.children("img").attr("src", target.dataset.src);
+        prev.children(".caption").html(target.dataset.caption);
+
         console.log(entry.intersectionRatio);
     }
 }
