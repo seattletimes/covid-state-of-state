@@ -25,7 +25,14 @@
 
 .marketing__button:hover {
   cursor: pointer;
-  background-color: #00575e;
+  background-color: #027981;
+  color: white !important;
+}
+
+.readMore {
+  text-align: center;
+  font-family: @df-sans;  
+  width: 550px;
 }
 
 .funding {
@@ -169,7 +176,7 @@
 }
 
 .stickMe {
-    height: 90vh;
+    height: 95vh;
     position: sticky;
     top: 0;
 
@@ -592,4 +599,28 @@ img {
 
 .navButton {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.button {
+  flex-grow: 1;
+  text-align: center;
+  max-width: 150px;
+  width: 90%;
+  margin: auto;
+  border: 1px solid #25aca9;
+  padding: 6px 6px;
+  border-radius: 5px;
+  font-family: @df-sans;
+  font-size: 17px;
+  background-color: #c7e6e3;
+  color: black !important;
+  font-weight: normal;
+}
+
+.button:hover {
+  cursor: pointer;
+  background-color: #027981;
+  color: white !important;
 }
