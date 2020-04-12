@@ -7,21 +7,33 @@ const ready = require("./brightcove");
 
 function obvserverCallback(entries) {
     for (const entry of entries) {
-        const target = entry.target;
+        if (entry.intersectionRatio > 0) {
+            const target = entry.target;
 
-        console.log(target.dataset.src);
-        console.log(target.dataset.caption);
-        
-        const prev = $(target).prevAll(".stickMe");
-        const upperThreshold = 0.5;
-        const val = Math.min(entry.intersectionRatio, upperThreshold);
-        const opacity = (val / upperThreshold);
+            console.log(target.dataset.src);
+            console.log(target.dataset.caption);
+            
+            const prev = $(target).prevAll(".stickMe");
 
-        prev.css("opacity", opacity);
-        prev.children("img").attr("src", target.dataset.src);
-        prev.children(".caption").html(target.dataset.caption);
+            // Go full opacity on entry - fade out on exit - can check for exit by the bounding
+            // rect having a negative y coordinate.
+            let opacity;
+            // if (entry.boundingClientRect.y < 0) {
+            // } else {
+            //     opacity = 1;
+            // }
+            const upperThreshold = 1;
+            const lowerThreshold = 0;
+            const val = Math.max(lowerThreshold, Math.min(entry.intersectionRatio, upperThreshold)) - lowerThreshold;
+            opacity = (val / (upperThreshold - lowerThreshold));
 
-        console.log(entry.intersectionRatio);
+            console.log(entry.boundingClientRect.y);
+            console.log(`Opacity ${opacity}`)
+
+            prev.css("opacity", opacity);
+            prev.children("img").attr("src", target.dataset.src);
+            prev.children(".caption").html(target.dataset.caption);        
+        }
     }
 }
 
