@@ -37,7 +37,7 @@ function obvserverCallback(entries) {
     }
 }
 
-const numSteps = 50;
+const numSteps = 40;
 const steps = [];
 for (let i = 0; i <= numSteps; i++) {
     steps.push(i / numSteps);
