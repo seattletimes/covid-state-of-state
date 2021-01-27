@@ -42,7 +42,7 @@ module.exports = function(player, id, callback) {
     return loading[player].then(later);
   }
   loading[player] = new Promise(function(ok, fail) {
-    var src = `//cdn.jwplayer.com/players/${data-id}-UXknQA8J.js`;
+    var src = `//cdn.jwplayer.com/players/${data-id}-mRGp7S2O.js`;
     var script = document.createElement("script");
     script.src = src;
     script.onload = ok;
