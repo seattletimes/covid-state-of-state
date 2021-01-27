@@ -3,7 +3,7 @@ const $ = require('jquery');
 const async = require("async");
 
 require("component-responsive-frame/child");
-const ready = require("./brightcove");
+const ready = require("./JWplayer");
 
 function obvserverCallback(entries) {
     for (const entry of entries) {
